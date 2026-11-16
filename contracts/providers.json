@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "configuration": {"provider":"libcal","bookingUrl":"https://alpha.libcal.com/reserve/spaces/synthetic-a","allowedOrigins":["https://alpha.libcal.com"],"locationId":"41","groupId":"51","timezone":"America/Denver"},
+      "room": {"location":{"provider":"libcal","locationId":"41","timezone":"America/Denver"},"roomId":"61"},
+      "interval":{"start":"2026-10-14T18:30:00-06:00","end":"2026-10-14T20:00:00-06:00","timezone":"America/Denver"},
+      "outcome":"available"
+    },
+    {
+      "configuration": {"provider":"libcal","bookingUrl":"https://beta.libcal.com/spaces?lid=42&gid=52","allowedOrigins":["https://beta.libcal.com"],"locationId":"42","groupId":"52","timezone":"Europe/London"},
+      "room": {"location":{"provider":"libcal","locationId":"42","timezone":"Europe/London"},"roomId":"62"},
+      "interval":{"start":"2026-11-12T12:00:00+00:00","end":"2026-11-12T13:00:00+00:00","timezone":"Europe/London"},
+      "outcome":"available"
+    }
+  ]
+}

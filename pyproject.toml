@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathist-library-room-booking"
+version = "0.0.0.dev1"
+description = "Provider-neutral room booking contracts and injected Python LibCal adapter"
+readme = "README.md"
+license = "PolyForm-Small-Business-1.0.0"
+license-files = ["LICENSE.md", "NOTICE"]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+gmail = ["mathist-gmail-connector==0.0.0.dev1"]
+
+[tool.setuptools.packages.find]
+where = ["python/src"]

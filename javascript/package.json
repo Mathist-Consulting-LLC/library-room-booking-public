@@ -1,0 +1,19 @@
+{
+  "name": "@mathist/library-room-booking",
+  "version": "0.0.0-dev.1",
+  "private": true,
+  "license": "PolyForm-Small-Business-1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./libcal": "./src/libcal.js"
+  },
+  "files": [
+    "NOTICE",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
