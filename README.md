@@ -22,6 +22,13 @@ A successful submission can remain pending. The Python email helpers offer optio
 
 For another booking provider, implement the [provider interface](python/src/library_room_booking/__init__.py) or equivalent [JavaScript contracts](javascript/src/index.js). Advertise capabilities per operation and return explicit outcomes. Use the provider's stable location and room IDs, with timestamps that include an offset valid for the location's timezone. Supply transport, credentials, and configuration through the consumer. The [provider fixtures](contracts/providers.json) illustrate synthetic LibCal site configurations.
 
+To run the synthetic example after installing the Python package, run
+`python tests/consumer_example.py`. It demonstrates a LibCal submission,
+a pending receipt, a matching approval, and a lost submission response. After
+a lost response, the caller retains its claim and waits for reconciliation
+of the original booking identity. The example also shows an availability-only
+simulated alternate provider. All provider and inbox responses are fixtures.
+
 ## License
 
 [PolyForm Small Business 1.0.0](LICENSE.md). Preserve the [required notice](NOTICE) when redistributing.

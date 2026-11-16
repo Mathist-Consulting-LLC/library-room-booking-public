@@ -1,7 +1,7 @@
 """Runnable synthetic calling application. No network, SDK, credentials or delivery.
 
 Application policy and fake adapters intentionally live under tests, outside core.
-Run with an installed mathist-library-room-booking; see docs/consumer-integration.md.
+Run with an installed mathist-library-room-booking; see the repository README.
 """
 import base64
 from copy import deepcopy
@@ -13,7 +13,10 @@ import sys
 from urllib.parse import parse_qs, urlsplit
 
 import library_room_booking as installed
-from library_room_booking import BookingRequest, Dependencies, Interval, Location, Outcome, Room
+from library_room_booking import (
+    AvailabilityRequest, BookingRequest, Dependencies, Interval, Location,
+    OperationResult, Outcome, Room, capabilities,
+)
 from library_room_booking.email import ConnectorFailure, MailboxBinding, TrustedProvenance, lookup_recipient
 from library_room_booking.libcal import LibCalAdapter, Response
 from library_room_booking.libcal_evidence import parse_receipt
@@ -237,5 +240,52 @@ def demo():
     print(json.dumps({'site_updates': app.site_updates, 'optional_email_sink': app.outbox}, indent=2))
 
 
+class SimulatedAlternateProvider:
+    """Illustrate the provider contract with one fixed slot and no booking support."""
+
+    capabilities = capabilities(availability='supported')
+
+    def __init__(self, slot):
+        self.slot = slot
+
+    def availability(self, request, dependencies):
+        if request == self.slot:
+            return OperationResult(Outcome.AVAILABLE, request, slots=(request.interval,))
+        return OperationResult(Outcome.UNAVAILABLE, request)
+
+    def book(self, request, dependencies):
+        return OperationResult(Outcome.UNSUPPORTED, request)
+
+
+def recovery_demo():
+    app = Consumer()
+    app.provider.timeout = True
+    assert app.create_event(MEMBER)['status'] == 'needs_attention'
+    assert app.result.outcome == Outcome.UNKNOWN_AFTER_SUBMIT
+
+    app.inbox.messages = [message()]
+    assert app.refresh(OPERATOR)['status'] == 'needs_attention'
+    assert 'original provider booking identity' in app.action
+    # Preserve the claim and require readback of the original provider identity.
+    try:
+        app.create_event(MEMBER)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('An ambiguous submission must not be repeated')
+    assert sum(path == '/ajax/space/book' for _, path, _ in app.provider.calls) == 1
+
+    alternate_room = Room(Location('simulated-alternate', 'demo-location',
+                                  REQUEST.interval.timezone), 'demo-room')
+    slot = AvailabilityRequest(alternate_room, REQUEST.interval)
+    alternate = SimulatedAlternateProvider(slot)
+    assert alternate.capabilities['booking'] == 'unsupported'
+    assert alternate.availability(slot, None).slots == (slot.interval,)
+    request = BookingRequest(alternate_room, slot.interval, 'synthetic-alternate-attempt')
+    assert alternate.book(request, None).outcome == Outcome.UNSUPPORTED
+    print('Simulated alternate availability and LibCal unknown-outcome recovery passed.')
+
+
 if __name__ == '__main__':
     demo()
+    recovery_demo()
