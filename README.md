@@ -1,6 +1,26 @@
 # Library Room Booking
 
-Python and JavaScript interfaces for library room availability and booking. Applications supply provider configuration, authorization, and transport.
+Add library room availability and booking to an application that manages events, meetings, or study sessions. This library gives your application a consistent way to describe a room request and report its outcome, with adapters for supported LibCal flows.
+
+For example, an event application could check whether a room is available for a meeting, submit a request through the Python adapter, and display that the request is awaiting approval. If the deployment connects an email account, the Python helpers can help interpret receipts against the original reservation.
+
+## Why use it?
+
+A library's booking website is useful for making an individual reservation manually. This package is useful when room requests are part of another application's workflow. It provides reusable room and time contracts, provider capability reporting, LibCal parsing, and explicit outcomes for cases such as unavailable rooms, pending approval, and a lost submission response.
+
+Your application supplies site configuration, transport, contact information, and any required authorization. It owns user permissions, persistent records, retry decisions, and notifications. Each library can have its own booking rules and approval process.
+
+## What can it do today?
+
+The Python LibCal adapter supports discovery, availability, and booking submission. The JavaScript adapter supports discovery and availability. The support table below describes the operation boundaries.
+
+A submitted request can still await library approval. The optional Python email helpers bind evidence to the original booking before reporting confirmation. Email access is optional. With email disconnected, the calling application must arrange another supported verification method or keep the booking pending for manual review.
+
+The provider interface supports additional booking systems with their own capabilities. The included alternate provider is a simulation that demonstrates availability-only support. Real non-LibCal providers require their own adapters and validation.
+
+## Try the workflow
+
+The [offline consumer example](tests/consumer_example.py) walks through submission, a pending receipt, a simulated approval, and recovery after a lost response. It also demonstrates the alternate provider. All responses in that example are synthetic. A separate live approval-email test remains pending.
 
 ## Install from source
 
