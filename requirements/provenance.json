@@ -1,0 +1,85 @@
+{
+  "publication_note": "Sanitized source-backed projection. Historical IDs/revisions/criteria are retained; original source pointers, approvals and unredacted catalogs are protected. Historical acceptance is not a claim that all criteria are currently proven. New documentation records cite public issues plus separately retained implementation authorization.",
+  "records": [
+    {
+      "id": "LRB-BOUNDARY",
+      "revision": 1,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-BOUNDARY",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LRB-FORM",
+      "revision": 1,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-FORM",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LRB-AVAILABILITY",
+      "revision": 1,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-AVAILABILITY",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LRB-SUBMISSION",
+      "revision": 1,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-SUBMISSION",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LRB-EVIDENCE",
+      "revision": 1,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-EVIDENCE",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LRB-EMAIL-LOOKUP",
+      "revision": 2,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-EMAIL-LOOKUP",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LRB-EMAIL-INTEGRATION",
+      "revision": 2,
+      "historical_provenance": {
+        "visibility": "protected",
+        "record": "LRB-EMAIL-INTEGRATION",
+        "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
+        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
+      }
+    },
+    {
+      "id": "LIBRARY-ORGANIZATION",
+      "revision": 1,
+      "authorization_note": "Issue defines scope; implementation separately authorized by maintainer. Original instruction retained in protected task evidence."
+    },
+    {
+      "id": "LIBRARY-DEVELOPER-DOCS",
+      "revision": 1,
+      "authorization_note": "Issue defines scope; implementation separately authorized by maintainer. Original instruction retained in protected task evidence."
+    }
+  ]
+}
