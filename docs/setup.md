@@ -55,9 +55,12 @@ build the current [Email Tools](https://github.com/Mathist-Consulting-LLC/gmail-
 wheel and booking wheel into the same wheel directory, then in your consumer:
 
 ```sh
-python -m pip install --no-index --find-links "$WHEELS" 'mathist-library-room-booking[gmail]==0.0.0.dev1'
+"$PIP_PYTHON" -m pip --python "$PYTHON" install --no-index --find-links "$WHEELS" 'mathist-library-room-booking[gmail]==0.0.0.dev1'
+"$PYTHON" -I -c 'import pathlib,sys,mathist_gmail_connector as p; assert pathlib.Path(p.__file__).is_relative_to(sys.prefix); print("installed Gmail connector")'
 ```
 
+`PIP_PYTHON` and `PYTHON` retain the quickstart provisioning and target interpreters.
+Expected readback: `installed Gmail connector`.
 `WHEELS` must be an absolute directory containing both built wheels. The extra
 requires `mathist-gmail-connector==0.0.0.dev1` but adds no SDK/credentials.
 The preserved `library_room_booking.gmail_connector.GmailServiceConnector`

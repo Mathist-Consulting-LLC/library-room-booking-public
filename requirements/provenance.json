@@ -8,8 +8,9 @@
         "visibility": "protected",
         "record": "LRB-BOUNDARY",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LRB-FORM",
@@ -18,8 +19,9 @@
         "visibility": "protected",
         "record": "LRB-FORM",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LRB-AVAILABILITY",
@@ -28,8 +30,9 @@
         "visibility": "protected",
         "record": "LRB-AVAILABILITY",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LRB-SUBMISSION",
@@ -38,8 +41,9 @@
         "visibility": "protected",
         "record": "LRB-SUBMISSION",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LRB-EVIDENCE",
@@ -48,8 +52,9 @@
         "visibility": "protected",
         "record": "LRB-EVIDENCE",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LRB-EMAIL-LOOKUP",
@@ -58,8 +63,9 @@
         "visibility": "protected",
         "record": "LRB-EMAIL-LOOKUP",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LRB-EMAIL-INTEGRATION",
@@ -68,8 +74,9 @@
         "visibility": "protected",
         "record": "LRB-EMAIL-INTEGRATION",
         "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90",
-        "note": "Historical authority and original source retained by maintainers; this public issue routes the sanitized projection, not a new historical approval."
-      }
+        "note": "Original authority/date and exact originals are protected. Publication routing is context only and grants no historical approval."
+      },
+      "publication_routing": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7"
     },
     {
       "id": "LIBRARY-ORGANIZATION",
@@ -81,5 +88,122 @@
       "revision": 1,
       "authorization_note": "Issue defines scope; implementation separately authorized by maintainer. Original instruction retained in protected task evidence."
     }
-  ]
+  ],
+  "protected_originals": [
+    {
+      "identifier": "protected-original:sha256:4960c0ea273dc1a45122115e92a745b176dc06d24c2ed8986d8d8c5ed77be810",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "4960c0ea273dc1a45122115e92a745b176dc06d24c2ed8986d8d8c5ed77be810",
+      "bindings": [
+        {
+          "record": "LRB-BOUNDARY",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:909a71615e0c60d9a444290bf31d0ff6a84279ed82ee07f22a9d56bd8e4d33ea",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "909a71615e0c60d9a444290bf31d0ff6a84279ed82ee07f22a9d56bd8e4d33ea",
+      "bindings": [
+        {
+          "record": "LRB-FORM",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:41f45a4c79ad045fc21ca4a646c5cb7a5d9adb63ff1f272dc67bcddab16d79cd",
+      "visibility": "protected",
+      "kind": "original-acceptance",
+      "sha256": "41f45a4c79ad045fc21ca4a646c5cb7a5d9adb63ff1f272dc67bcddab16d79cd",
+      "bindings": [
+        {
+          "record": "LRB-FORM",
+          "location": "acceptance/0",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:6aff19123fc6b50183bfe5afea0f618b55eb6057e640db5e52ff7be617208134",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "6aff19123fc6b50183bfe5afea0f618b55eb6057e640db5e52ff7be617208134",
+      "bindings": [
+        {
+          "record": "LRB-AVAILABILITY",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:82edc7da26a5163e2a5965751cdf5651812d1a334ddff67a29c26c3d3852c539",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "82edc7da26a5163e2a5965751cdf5651812d1a334ddff67a29c26c3d3852c539",
+      "bindings": [
+        {
+          "record": "LRB-SUBMISSION",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:b8dab3caa7b2ad95793ec561a7c82402e993eed7ba7aad5d1f7c28eb0e669814",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "b8dab3caa7b2ad95793ec561a7c82402e993eed7ba7aad5d1f7c28eb0e669814",
+      "bindings": [
+        {
+          "record": "LRB-EVIDENCE",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:19ed24364b4619789285d42697856acf62a1f37fa88a1b613238b3664e33cf7b",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "19ed24364b4619789285d42697856acf62a1f37fa88a1b613238b3664e33cf7b",
+      "bindings": [
+        {
+          "record": "LRB-EMAIL-LOOKUP",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        },
+        {
+          "record": "LRB-EMAIL-LOOKUP",
+          "location": "changes/0/source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    },
+    {
+      "identifier": "protected-original:sha256:31cc09cff917d055e46fa633b36122ef59c3973c101b30ae5e40e17ee4cf24b4",
+      "visibility": "protected",
+      "kind": "original-source",
+      "sha256": "31cc09cff917d055e46fa633b36122ef59c3973c101b30ae5e40e17ee4cf24b4",
+      "bindings": [
+        {
+          "record": "LRB-EMAIL-INTEGRATION",
+          "location": "source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        },
+        {
+          "record": "LRB-EMAIL-INTEGRATION",
+          "location": "changes/0/source",
+          "catalog_sha256": "29fb596174da0399e1d901c19e35e756d376111e8bcdce87f675b9f00a2e4e90"
+        }
+      ]
+    }
+  ],
+  "digest_policy": "SHA256 of UTF-8 JSON with sorted keys, compact separators and ASCII escapes for original source/acceptance objects; catalog_sha256 hashes original file bytes. Identifiers resolve here to protected original bindings, not to publication issues. Maintainers retain exact originals privately."
 }

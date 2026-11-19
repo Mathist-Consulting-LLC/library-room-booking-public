@@ -8,7 +8,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:4960c0ea273dc1a45122115e92a745b176dc06d24c2ed8986d8d8c5ed77be810",
         "authority": "delegated-policy",
         "date": "2026-11-07"
       },
@@ -39,7 +39,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:909a71615e0c60d9a444290bf31d0ff6a84279ed82ee07f22a9d56bd8e4d33ea",
         "authority": "delegated-policy",
         "date": "2026-07-24"
       },
@@ -55,7 +55,7 @@
       "acceptance": [
         {
           "id": "AC1",
-          "statement": "Exercise Feedback and Address omission and required visible input using synthetic forms. Retain the original Feedback decision (#80) and patron-form classification (#929)."
+          "statement": "Exercise Feedback and Address omission and required visible input using synthetic forms. Retain the original Feedback decision and patron-form classification documented in protected-original:sha256:41f45a4c79ad045fc21ca4a646c5cb7a5d9adb63ff1f272dc67bcddab16d79cd."
         }
       ],
       "rationale": "Preserve the source-backed historical contract. Original sources, approvals, baseline snapshots and revision history are protected; publication and fixture results do not establish live acceptance.",
@@ -72,7 +72,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:6aff19123fc6b50183bfe5afea0f618b55eb6057e640db5e52ff7be617208134",
         "authority": "delegated-policy",
         "date": "2026-11-07"
       },
@@ -105,7 +105,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:82edc7da26a5163e2a5965751cdf5651812d1a334ddff67a29c26c3d3852c539",
         "authority": "delegated-policy",
         "date": "2026-11-07"
       },
@@ -138,7 +138,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:b8dab3caa7b2ad95793ec561a7c82402e993eed7ba7aad5d1f7c28eb0e669814",
         "authority": "delegated-policy",
         "date": "2026-11-07"
       },
@@ -173,7 +173,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:19ed24364b4619789285d42697856acf62a1f37fa88a1b613238b3664e33cf7b",
         "authority": "explicit-user",
         "date": "2026-11-13"
       },
@@ -191,7 +191,7 @@
       "acceptance": [
         {
           "id": "AC1",
-          "statement": "Document the optional Gmail retrieval interface, the interface for alternate mailbox providers or push delivery, and which existing calendar-management retrieval behavior is reused. Keep mailbox configuration and credentials supplied by the caller."
+          "statement": "Document the optional Gmail retrieval interface, the interface for alternate mailbox providers or push delivery, and which existing protected-source retrieval behavior (public technical description: docs/email.md) is reused. Keep mailbox configuration and credentials supplied by the caller."
         },
         {
           "id": "AC2",
@@ -226,7 +226,7 @@
           "from_revision": 1,
           "from_digest": "4c30e0a0b8856b7034a8432a0e4faf08ae1d76b35f98f217a9cc8daea889193a",
           "source": {
-            "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+            "pointer": "protected-original:sha256:19ed24364b4619789285d42697856acf62a1f37fa88a1b613238b3664e33cf7b",
             "authority": "explicit-user",
             "date": "2026-11-13"
           },
@@ -244,7 +244,7 @@
       "kind": "mandatory",
       "lifecycle": "accepted",
       "source": {
-        "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+        "pointer": "protected-original:sha256:31cc09cff917d055e46fa633b36122ef59c3973c101b30ae5e40e17ee4cf24b4",
         "authority": "explicit-user",
         "date": "2026-11-13"
       },
@@ -294,7 +294,7 @@
           "from_revision": 1,
           "from_digest": "81281c3423268a1c0d7fc9134559ed1ec78e64ebfa46f21a6a6a41c5c35022e8",
           "source": {
-            "pointer": "https://github.com/Mathist-Consulting-LLC/library-room-booking-public/issues/7",
+            "pointer": "protected-original:sha256:31cc09cff917d055e46fa633b36122ef59c3973c101b30ae5e40e17ee4cf24b4",
             "authority": "explicit-user",
             "date": "2026-11-13"
           },
