@@ -76,3 +76,21 @@ exact trusted evidence. Email-only updates remain unavailable. API search and
 follow-up approval are distinct evidence stages; fixtures establish neither live
 delivery nor production adoption. Applications own operator permissions and
 private original-message access; member updates must use safe projections.
+
+## Authorized operator lookup
+
+Persist an immutable mapping from your private booking reference to the original
+complete tagged recipient, account handle and provider booking identity before
+submission. An authorized operator resolves that reference, selects only its
+bound inbox and searches the complete address (the lookup emits quoted To/Cc/Bcc/
+Delivered-To terms). In a mailbox UI, use the same complete tagged address and
+then inspect the exact original; never search only the tag fragment or select
+the newest message automatically. Preserve a selected provider message ID
+privately for later access through that same account. Operator permission is an
+application check; a tag/reference alone is not permission. Recheck exact booking
+and trusted provenance before updating status or using a capability link.
+
+The reused retrieval mechanics are profile binding, bounded list pagination,
+full-message retrieval, deduplication and exact routing-header checks. The public
+component uses no original application's mailbox defaults, storage or receipt
+status policy. Protected provenance retains its historical extraction sources.
