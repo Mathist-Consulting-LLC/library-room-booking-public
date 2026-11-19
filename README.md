@@ -1,4 +1,8 @@
-# Library Room Booking
+# Library Tools
+
+The existing room-booking component includes neutral contracts, LibCal adapters and booking-specific email interpretation. General Gmail service access belongs to [Email Tools](https://github.com/Mathist-Consulting-LLC/gmail-connector-public).
+
+Start with the [developer guide](docs/README.md) for installation, runnable offline examples and API contracts. See the [component map](docs/component-charter.md) and [requirements](requirements/README.md).
 
 Find available library rooms and submit reservation requests from your own software. This library handles the room-booking part of a larger application. The application supplies the meeting details, user permissions, and status display.
 
